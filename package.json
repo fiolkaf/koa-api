@@ -1,7 +1,7 @@
 {
-  "name": "koa-server",
+  "name": "koa-api",
   "version": "1.0.0",
-  "description": "Declarative koa server",
+  "description": "Declarative koa api",
   "main": "index.js",
   "scripts": {
     "test": "mocha $(find *.spec.js -and -not-path='node_modules')"
