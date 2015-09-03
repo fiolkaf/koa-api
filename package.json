@@ -1,0 +1,15 @@
+{
+  "name": "koa-server",
+  "version": "1.0.0",
+  "description": "Declarative koa server",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha $(find *.spec.js -and -not-path='node_modules')"
+  },
+  "author": "Filip Fiolka",
+  "license": "ISC",
+  "devDependencies": {
+    "koa": "^1.0.0",
+    "unexpected": "^9.6.0"
+  }
+}
