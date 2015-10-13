@@ -5,7 +5,7 @@
 ###Koa web api implementation with predefined middlewares for:
 - logging,
 - error handling,
-- model validation
+- model validation,
 - service registrations:
 ```javascript
 koaApi.use('db', mongodb(connectionString));
@@ -23,9 +23,9 @@ koaApi.use('db', mongodb(connectionString));
 @http('patch')
 @url('/users/:user_id')
 @model('/schemas/user.json')
-*patchUser() => {
+*updateUser() => {
   var id = this.params.user_id;
-  yield this.services['db'].upsert(this.request.body);
+  yield this.services['db'].upsert(id, this.request.body);
   this.status = HttpStatus.OK;
 }
 ```
