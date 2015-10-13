@@ -1,4 +1,5 @@
-
-let server = new KoaServer('./api');
-server.on('request:start', msg => console.log(msg));
-server.on('request:end', err => console.log(err)):
+modules('.').routes()
+    .apply(koa())
+    .on('request:start', console.log.apply(msg))
+    .on('request:end', console.log.apply(err))
+    .on('error', koa.release);
