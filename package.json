@@ -4,7 +4,8 @@
   "description": "Declarative koa api",
   "main": "index.js",
   "scripts": {
-    "test": "mocha $(find *.spec.js -and -not-path='node_modules')"
+    "test": "mocha $(find *.spec.js -and -not-path='node_modules')",
+    "jshint": "jshint **/*.js"
   },
   "author": "Filip Fiolka",
   "license": "ISC",
@@ -12,6 +13,7 @@
     "babel": "^5.8.23",
     "co-mocha": "^1.1.2",
     "co-request": "^1.0.0",
+    "jshint": "^2.8.0",
     "koa": "^1.0.0",
     "koa-router": "^5.2.3",
     "mocha": "^2.3.3",
